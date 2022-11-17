@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 90vw;
+}
+
+.panel {
+  height: 90vh;
+  border-radius: 15px;
+  position: relative;
+}
+
+.panel h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
