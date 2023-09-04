@@ -2,6 +2,7 @@
 
 :root {
   --border-color: #144fc6;
+  --fill-color: #3494e4;
 }
 
 * {
@@ -9,7 +10,7 @@
 }
 
 body {
-  background-color: #3494e4;
+  background-color: var(--fill-color);
   color: #fff;
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -52,9 +53,54 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
 }
 
 .cup.cup-small.full {
-  background-color: #3494e4;
+  background-color: var(--fill-color);
   color: #fff;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
 }
